@@ -24,6 +24,7 @@ function previousButton(){
         current = current-1;
         output();
         changeBGround();
+        colorQuote();
     }
 }
 
@@ -34,6 +35,8 @@ function nextButton(){
         current = current+1;
     output();
     changeBGround();
+    colorQuote();
+    
     }
 }
 
@@ -45,4 +48,12 @@ function changeBGround(){
     Math.floor(Math.random() * 9)
     var sourceBg = 'url(../images/img'+ random(9)+ '.jpg)';
     document.getElementById("bg").style.backgroundImage = sourceBg;
+}
+
+function colorQuote(){
+ //   color = ["black", "blue", "grey", "yellow", "pink", "red", "orange", "brown", "green"]
+ //   Math.floor(Math.random() * 8)
+   // var getColor = color[random(8)];
+    document.getElementsByClassName("fa-quote-left").style.color = "red";
+
 }
