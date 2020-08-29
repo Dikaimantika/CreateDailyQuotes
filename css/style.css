@@ -1,9 +1,15 @@
 
-body{
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+#bg{
     background: url(../images/img1.jpg);
-    background-size: cover;
+    height: 100%;
+    background-position: center;
     background-repeat: no-repeat;
-    
+    background-size: cover;
 }
 
 #box1{
@@ -15,14 +21,16 @@ body{
 }
 
 #box2{
+    border: gray;
     background-color: white;
     width: 750px;
     height: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 50px 70px;
+    justify-content: space-evenly;
+    padding: 40px 50px;
     border-radius: 15px;
+    box-shadow: 2px 2px 2px gray;
 }
 
 p{
@@ -36,13 +44,20 @@ div h2{
 }
 
 .button-circle{
+    color: darkslategrey;
+    border: 1px solid gray;
+    display: inline-block;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: #FFF;
-    font-size: 25px;
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 25px;
+    margin: 25px;
     text-align: center;
-    padding: 30;
+    vertical-align: middle;
+    cursor: grab;
 }
 
 .fa-quote-left{
@@ -81,7 +96,8 @@ div h2{
     .button-circle{
         width: 30px;
         height: 30px;
-        font-size: 20px;        
+        font-size: 20px;
+               
     }
 
     .fa-quote-left{

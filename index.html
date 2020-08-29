@@ -4,34 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    
-    <!--Bootstrap-->
+    <script src="js/script.js"></script>
+
+    <!--Bootstap CDN-->
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <title>Daily Quotes Web</title>
-
-</head>
-<body>
-    
-        <div id="box1">
-        
-            <button class="button-circle" onclick="previousButton()">&#8249;</button>
-            <div id="box2">
-                <i class="fas fa-quote-left"></i>
-                    <p id="contentQuote">Quotes</p>
-                    <h2 id="authorQuote">Quote's author</h2>
-                <i class="fas fa-quote-right"></i>
-            </div>
-            <button class="button-circle" onclick="nextButton()">&#8250;</button>
-            
-        </div>   
-
-    <script src="js/script.js"></script>
 
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -40,5 +17,28 @@
 
     <!--Source for Quote icon-->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <!--Link title icon-->
+    <link rel="icon" type="image/png" href="images/laugh.ico">
+
+    <title>Daily Quotes Web</title>
+</head>
+
+<body>
+    <div id="bg">
+        <div id="box1">
+            <div class="button-circle" onclick="previousButton()">&#8249;</div>
+        <!--<button class="button-circle" onclick="previousButton()">  </button>-->    
+            <div id="box2">
+                <i class="fas fa-quote-left"></i>
+                    <p id="contentQuote">Quotes</p>
+                    <h2 id="authorQuote">Quote's author</h2>
+                <i class="fas fa-quote-right"></i>
+            </div>
+            <div class="button-circle" onclick="nextButton()">&#8250;</div>
+        </div>
+    </div>
+           
 </body>
+
 </html>
