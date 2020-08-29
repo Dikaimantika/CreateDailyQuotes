@@ -36,7 +36,6 @@ function nextButton(){
     output();
     changeBGround();
     colorQuote();
-    
     }
 }
 
@@ -44,16 +43,15 @@ function random(number) {
         return Math.floor(Math.random()*(number+1));
 }
 
+//change background image
 function changeBGround(){
-    Math.floor(Math.random() * 9)
     var sourceBg = 'url(../images/img'+ random(9)+ '.jpg)';
     document.getElementById("bg").style.backgroundImage = sourceBg;
 }
 
+//Change left quote color
 function colorQuote(){
- //   color = ["black", "blue", "grey", "yellow", "pink", "red", "orange", "brown", "green"]
- //   Math.floor(Math.random() * 8)
-   // var getColor = color[random(8)];
-    document.getElementsByClassName("fa-quote-left").style.color = "red";
-
+    color = ["crimson", "olive", "blue", "grey", "yellow", "pink", "red", "orange", "brown", "green", "purple"]
+    var getColor = color[random(10)];
+    document.getElementById("lilquote").style.color = getColor;
 }

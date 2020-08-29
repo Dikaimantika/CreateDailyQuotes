@@ -8,8 +8,8 @@ html, body{
     background: url(../images/img1.jpg);
     height: 100%;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #box1{
@@ -21,21 +21,21 @@ html, body{
 }
 
 #box2{
-    border: gray;
     background-color: white;
+    border: gray;
+    box-shadow: 2px 2px 2px gray;
     width: 750px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 40px 40px 20px 40px;
     border-radius: 15px;
-    box-shadow: 2px 2px 2px gray;
 }
 
 p{
-    font-weight: 300;
     font-size: 36px;
     line-height: 44px;
+    font-weight: 300;
 }
 
 div h2{
@@ -44,17 +44,17 @@ div h2{
 }
 
 .button-circle{
-    color: darkslategrey;
-    border: 1px solid gray;
     display: inline-block;
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    margin: 25px;
     background-color: #FFF;
+    color: darkslategrey;
+    border: 1px solid gray;
     font-size: 45px;
     font-weight: 300;
     line-height: 25px;
-    margin: 25px;
     text-align: center;
     vertical-align: middle;
     cursor: grab;
@@ -62,15 +62,14 @@ div h2{
 
 .fa-quote-left{
     font-size: 30px;
-    color: black;
     align-self: flex-start;
     padding-bottom: 10px;
 }
 
 .fa-quote-right{
-    font-size: 85px;
-    color: #EBEDEF;    
+    font-size: 85px;   
     align-self: flex-end;
+    color: #EBEDEF; 
     margin-top: -60px;
 }
 
@@ -97,7 +96,7 @@ div h2{
         width: 30px;
         height: 30px;
         font-size: 20px;
-        line-height: 20px;
+        line-height: 22px;
     }
 
     .fa-quote-left{
@@ -106,7 +105,7 @@ div h2{
 
     .fa-quote-right{
         font-size: 50px;
-        margin-top: -30px;
+        margin-top: -35px;
     }
 }
 
